@@ -30,3 +30,44 @@ Java 8 or higher
 Maven 3.6 or higher
 SQL database (MySQL recommended)
 IDE-Eclipse
+
+ecommerce-website/
+│
+├── src/                            
+│   └── main/                     
+│       ├── java/                    
+│       │   ├── com/
+│       │   │   ├── entities/         # Entity classes like User, Product, Order
+│       │   │   ├── servlets/         # Servlets for user actions (Login, Register, etc.)
+│       │   │   ├── dao/              # Data access objects (DB interactions)
+│       │   │   ├── model/            # Model classes for handling business logic
+│       │   │   └── controller/       # Controllers managing requests
+│       │   └── resources/            # Hibernate configuration (hibernate.cfg.xml)
+│       │   
+│       ├── webapp/                    
+│       │   ├── WEB-INF/               # Web configuration files (web.xml)
+│       │   ├── css/                   # CSS files for styling
+│       │   ├── img/                   # Image assets
+│       │   ├── js/                    # JavaScript files (validation.js)
+│       │   ├── jsp/                   # JSP files for different views
+│       │   │   ├── aboutus.jsp
+│       │   │   ├── add-products.jsp
+│       │   │   ├── admin.jsp
+│       │   │   ├── checkout.jsp
+│       │   │   ├── editprofile.jsp
+│       │   │   ├── index.jsp
+│       │   │   ├── login.jsp
+│       │   │   ├── normal.jsp
+│       │   │   ├── orderStatus.jsp
+│       │   │   ├── register.jsp
+│       │   │   ├── registration.jsp
+│       │   │   ├── searchProduct.jsp
+│       │   │   ├── seller.jsp
+│       │   │   ├── showProduct.jsp
+│       │   │   └── userprofile.jsp
+│       ├── target/                   # Compiled classes and resources
+│       ├── m2e-wtp/                  # Maven web plugin resources
+│       ├── schema.sql                # Database schema for MySQL
+│       ├── pom.xml                   # Maven build configuration
+└── README.md                        # Project documentation
+
